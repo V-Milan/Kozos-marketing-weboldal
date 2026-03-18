@@ -3,58 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Marketing Alapjai | Kezdőlap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <title>Online Marketing Alapjai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">📈 Online Marketing Alapjai</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mi-az.html">Mi az OM?</a></li>
-                    <li class="nav-item"><a class="nav-link" href="csatornak.html">Csatornák</a></li>
-                    <li class="nav-item"><a class="nav-link" href="eszkozok.html">Eszközök</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tippek.html">Tippek</a></li>
-                    <li class="nav-item"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
-                </ul>
-            </div>
+<nav class="navbar">
+    <div class="nav-container">
+        <a class="logo" href="index.html">
+            <span>OM</span>
+            Online Marketing Alapjai
+        </a>
+        
+        <div class="nav-links d-none d-lg-flex">
+            <a href="index.html">Kezdőlap</a>
+            <a href="alapok.html">Mi az?</a>
+            <a href="csatornak.html">Csatornák</a>
+            <a href="eszkozok.html">Eszközök</a>
+            <a href="tippek.html">Tippek</a>
         </div>
-    </nav>
 
-    <header class="hero text-center">
-        <div class="container">
-            <h1 class="display-3 fw-bold mb-4">Online Marketing Alapjai<br><span class="text-primary">2026</span></h1>
-            <p class="lead fs-3 mb-5 opacity-90">Ismerd meg a legfontosabb csatornákat, eszközöket és stratégiákat,<br>hogy sikeres legyél az interneten.</p>
-            <a href="csatornak.html" class="btn btn-primary btn-lg px-5 py-3">Fedezd fel a csatornákat →</a>
-        </div>
-    </header>
+        <button class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
 
-    <section class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9 text-center">
-                    <h2 class="mb-4">A digitális siker alapjai egy helyen</h2>
-                    <p class="lead opacity-75">Modern, sötét dizájnnal és átlátható tartalommal mutatjuk be az online marketing legfontosabb elemeit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Kezdőlap</a>
+        <a href="alapok.html">Mi az?</a>
+        <a href="csatornak.html">Csatornák</a>
+        <a href="eszkozok.html">Eszközök</a>
+        <a href="tippek.html">Tippek</a>
+    </div>
+</nav>
 
-    <footer class="footer text-center">
-        <div class="container">
-            <p class="mb-1 fs-5">&copy; 2026 Online Marketing Alapjai</p>
-            <p class="mb-0">Készítette: Variasi Milán & Tóth Ferenc Krisztián</p>
-        </div>
-    </footer>
+<section class="hero">
+    <div class="container">
+        <span class="badge bg-info text-dark px-4 py-3 rounded-pill mb-4 d-inline-block">
+            <i class="fa-solid fa-bolt"></i> 2026 - Kezdőbarát
+        </span>
+        
+        <h1 class="display-3 fw-bold neon mb-4">ONLINE MARKETING<br>ALAPJAI</h1>
+        
+        <p class="lead col-lg-8 mx-auto mb-5" style="color:#ccc; font-size:1.25rem;">
+            Tanuld meg lépésről lépésre, hogyan építs sikeres online jelenlétet egyszerűen és ingyen.
+        </p>
+        
+        <a href="alapok.html" class="btn">
+            Kezdj el tanulni most 
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="footer">
+    <div class="container">
+        Készítette: Variasi Milán &amp; Tóth Ferenc Krisztián
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+        if (mobileMenu.style.display === 'block') {
+            mobileMenu.style.display = 'none';
+            hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        } else {
+            mobileMenu.style.display = 'block';
+            hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        }
+    });
+</script>
 </body>
 </html>

@@ -1,99 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 body {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #0a0a0a;
-    color: #e0e0e0;
-    line-height: 1.7;
-}
-
-.navbar {
-    background-color: rgba(10, 10, 10, 0.97) !important;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-}
-
-.navbar-brand {
-    font-weight: 700;
-    font-size: 1.7rem;
-    letter-spacing: -1px;
-    color: #ffffff !important;
-}
-
-.hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e2937 50%, #164e63 100%);
-    padding: 180px 0 130px;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.18), transparent 70%);
-    pointer-events: none;
-}
-
-.card {
-    background-color: #16161e;
-    border: 1px solid #334155;
-    border-radius: 20px;
-    transition: all 0.4s ease;
-    overflow: hidden;
-}
-
-.card:hover {
-    transform: translateY(-18px);
-    border-color: #22d3ee;
-    box-shadow: 0 25px 50px -12px rgba(34, 211, 238, 0.3);
-}
-
-.icon-circle {
-    width: 78px;
-    height: 78px;
-    background: linear-gradient(135deg, #22d3ee, #06b6d4);
-    color: #0a0a0a;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.1rem;
-    margin: 0 auto 22px;
-    box-shadow: 0 8px 25px rgba(34, 211, 238, 0.5);
+    color: #e5e5e5;
+    margin: 0;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.95);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #27272a;
+    padding: 15px 0;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: -0.8px;
-    color: #ffffff;
+    color: white;
+    text-decoration: none;
 }
 
-.list-group-item {
-    background-color: #16161e;
-    border-color: #334155;
-    color: #e0e0e0;
-    padding: 1.25rem;
-}
-
-.footer {
-    background: linear-gradient(135deg, #0f172a, #1e2937);
-    padding: 70px 0 35px;
-    border-top: 1px solid #334155;
-}
-
-.btn-primary {
-    background: linear-gradient(90deg, #22d3ee, #06b6d4);
+.logo span {
+    background-color: #22d3ee;
     color: #0a0a0a;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+}
+
+/* Menü linkek */
+.nav-links {
+    display: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.nav-links a:hover {
+    color: #22d3ee;
+}
+
+/* Hamburger */
+.hamburger {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
     border: none;
-    padding: 14px 36px;
-    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobil menü */
+.mobile-menu {
+    display: none;
+    background-color: #18181b;
+    padding: 20px;
+    border-top: 1px solid #27272a;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 12px 0;
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.mobile-menu a:hover {
+    color: #22d3ee;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+    text-align: center;
+}
+
+/* Általános konténer */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Kártya */
+.card {
+    background-color: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 16px;
+    padding: 30px 25px;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #22d3ee;
+}
+
+/* Gomb */
+.btn {
+    background-color: #22d3ee;
+    color: #0a0a0a;
     font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(34, 211, 238, 0.5);
-    color: #0a0a0a;
+.btn:hover {
+    background-color: #67e8f9;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+    background-color: #111113;
+    border-top: 1px solid #27272a;
+    padding: 30px 0;
+    text-align: center;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* Kis extra */
+.neon {
+    text-shadow: 0 0 25px rgb(34 211 238);
 }
