@@ -1,83 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
     line-height: 1.7;
-    color: #333;
-    background-color: #f8f9fa;
 }
 
 .navbar {
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(10, 10, 10, 0.97) !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
 .navbar-brand {
-    font-size: 1.65rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+    color: #ffffff !important;
 }
 
 .hero {
-    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
-    color: white;
-    padding: 180px 0 120px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e2937 50%, #164e63 100%);
+    padding: 180px 0 130px;
     position: relative;
     overflow: hidden;
 }
 
-.hero::after {
+.hero::before {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background: linear-gradient(transparent, #f8f9fa);
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.18), transparent 70%);
+    pointer-events: none;
 }
 
 .card {
-    border: none;
-    border-radius: 16px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    background-color: #16161e;
+    border: 1px solid #334155;
+    border-radius: 20px;
     transition: all 0.4s ease;
-    height: 100%;
+    overflow: hidden;
 }
 
 .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+    transform: translateY(-18px);
+    border-color: #22d3ee;
+    box-shadow: 0 25px 50px -12px rgba(34, 211, 238, 0.3);
 }
 
 .icon-circle {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, #e7f1ff, #f0e7ff);
-    color: #0d6efd;
+    width: 78px;
+    height: 78px;
+    background: linear-gradient(135deg, #22d3ee, #06b6d4);
+    color: #0a0a0a;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    margin: 0 auto 20px;
+    font-size: 2.1rem;
+    margin: 0 auto 22px;
+    box-shadow: 0 8px 25px rgba(34, 211, 238, 0.5);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.8px;
+    color: #ffffff;
+}
+
+.list-group-item {
+    background-color: #16161e;
+    border-color: #334155;
+    color: #e0e0e0;
+    padding: 1.25rem;
 }
 
 .footer {
-    background: linear-gradient(135deg, #0d6efd, #6610f2);
-    color: white;
-    padding: 60px 0 30px;
+    background: linear-gradient(135deg, #0f172a, #1e2937);
+    padding: 70px 0 35px;
+    border-top: 1px solid #334155;
 }
 
 .btn-primary {
-    padding: 12px 32px;
+    background: linear-gradient(90deg, #22d3ee, #06b6d4);
+    color: #0a0a0a;
+    border: none;
+    padding: 14px 36px;
     border-radius: 50px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(34, 211, 238, 0.5);
+    color: #0a0a0a;
 }
