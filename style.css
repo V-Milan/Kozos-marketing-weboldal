@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(10, 10, 10, 0.95) !important;
+    background-color: rgba(10, 10, 10, 0.97) !important;
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e2937 50%, #164e63 100%);
     padding: 180px 0 130px;
     position: relative;
     overflow: hidden;
@@ -31,13 +31,13 @@ body {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(circle at center, rgba(102, 16, 242, 0.15), transparent 70%);
+    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.18), transparent 70%);
     pointer-events: none;
 }
 
 .card {
     background-color: #16161e;
-    border: 1px solid #2a2a3a;
+    border: 1px solid #334155;
     border-radius: 20px;
     transition: all 0.4s ease;
     overflow: hidden;
@@ -45,22 +45,22 @@ body {
 
 .card:hover {
     transform: translateY(-18px);
-    border-color: #6610f2;
-    box-shadow: 0 25px 50px -12px rgba(102, 16, 242, 0.25);
+    border-color: #22d3ee;
+    box-shadow: 0 25px 50px -12px rgba(34, 211, 238, 0.3);
 }
 
 .icon-circle {
     width: 78px;
     height: 78px;
-    background: linear-gradient(135deg, #6610f2, #0d6efd);
-    color: white;
+    background: linear-gradient(135deg, #22d3ee, #06b6d4);
+    color: #0a0a0a;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.1rem;
     margin: 0 auto 22px;
-    box-shadow: 0 8px 25px rgba(102, 16, 242, 0.4);
+    box-shadow: 0 8px 25px rgba(34, 211, 238, 0.5);
 }
 
 h1, h2, h3, h4 {
@@ -71,18 +71,20 @@ h1, h2, h3, h4 {
 
 .list-group-item {
     background-color: #16161e;
-    border-color: #2a2a3a;
+    border-color: #334155;
     color: #e0e0e0;
+    padding: 1.25rem;
 }
 
 .footer {
     background: linear-gradient(135deg, #0f172a, #1e2937);
     padding: 70px 0 35px;
-    border-top: 1px solid #2a2a3a;
+    border-top: 1px solid #334155;
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, #6610f2, #0d6efd);
+    background: linear-gradient(90deg, #22d3ee, #06b6d4);
+    color: #0a0a0a;
     border: none;
     padding: 14px 36px;
     border-radius: 50px;
@@ -92,5 +94,6 @@ h1, h2, h3, h4 {
 
 .btn-primary:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(102, 16, 242, 0.4);
+    box-shadow: 0 15px 30px rgba(34, 211, 238, 0.5);
+    color: #0a0a0a;
 }
