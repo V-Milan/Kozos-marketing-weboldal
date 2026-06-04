@@ -3,90 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi az online marketing? - Online Marketing Alapjai</title>
+    <title>Alapok - Digimark 2026</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="nav-container">
-        <a class="logo" href="index.html">
-            <span>OM</span>
-            Online Marketing Alapjai
-        </a>
-        
-        <div class="nav-links d-none d-lg-flex">
-            <a href="index.html">Kezdőlap</a>
-            <a href="alapok.html">Mi az?</a>
-            <a href="csatornak.html">Csatornák</a>
-            <a href="eszkozok.html">Eszközök</a>
-            <a href="tippek.html">Tippek</a>
-        </div>
-
-        <button class="hamburger" id="hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
-
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="index.html">Kezdőlap</a>
-        <a href="alapok.html">Mi az?</a>
-        <a href="csatornak.html">Csatornák</a>
-        <a href="eszkozok.html">Eszközök</a>
-        <a href="tippek.html">Tippek</a>
-    </div>
-</nav>
-
-<div class="container py-5 mt-5">
-    <h2 class="display-5 fw-bold text-center mb-5">Mi az online marketing?</h2>
-    
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card">
-                <i class="fa-solid fa-globe fa-3x text-info mb-4"></i>
-                <h4>Globális elérés</h4>
-                <p>Egyetlen posztal vagy videóval elérheted az egész világot.</p>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand neon-text fs-3" href="index.html">Digimark<span style="color:#ff00cc">2026</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="alapok.html">Alapok</a></li>
+                    <li class="nav-item"><a class="nav-link" href="csatomak.html">Csatornák</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eszkozok.html">Eszközök</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tippek.html">Tippek</a></li>
+                </ul>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <i class="fa-solid fa-chart-line fa-3x text-info mb-4"></i>
-                <h4>Mérhető eredmények</h4>
-                <p>Pontosan látod, hányan látták, kattintottak vagy vásároltak.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <i class="fa-solid fa-handshake fa-3x text-info mb-4"></i>
-                <h4>Közvetlen kapcsolat</h4>
-                <p>Építhetsz bizalmat és közösséget a követőiddel.</p>
-            </div>
-        </div>
-    </div>
-</div>
+    </nav>
+</header>
 
-<footer class="footer">
+<main class="py-5" style="padding-top: 100px !important;">
     <div class="container">
-        Készítette: Variasi Milán &amp; Tóth Ferenc Krisztián
+        <h2 class="text-center mb-5" data-aos="fade-up">Az Online Marketing Alapjai</h2>
+        <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-up">
+                <div class="card p-4">
+                    <h4>Mi az online marketing?</h4>
+                    <p>Termékek, szolgáltatások vagy ötletek népszerűsítése az internet különböző csatornáin keresztül.</p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card p-4">
+                    <h4>Miért fontos 2026-ban?</h4>
+                    <p>A vásárlók többsége először online keres információt, mielőtt vásárolna.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="py-4 text-center">
+    <div class="container">
+        <p>&copy; 2026 Digimark - Online Marketing Projekt • Készítette: Variasi Milán és Tóth Ferenc</p>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    hamburger.addEventListener('click', () => {
-        if (mobileMenu.style.display === 'block') {
-            mobileMenu.style.display = 'none';
-            hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
-        } else {
-            mobileMenu.style.display = 'block';
-            hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-        }
-    });
-</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
